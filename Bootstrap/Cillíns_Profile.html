@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Cillín Lyons
+Student Number: C12505057
+Assignment: Portfolio
+Module: Rich Web Development
+Course Code: DT211c/4
+Start Date: 05/10/2015
+Finish Date: 22/10/2015	 
+-->
+
+<html>
+	<!-- This Cillíns_Profile.html page contains all the about me information.
+		It starts off with a carousel of images of Cillín.
+		Underneath that there is two paragraphs about Cillín.
+		This page was designed to be an introduction to Cillín and the website. -->
+		
+	<!-- Start of head -->
+	<head>
+	
+		<title>CillínLyons-C12505057-Cillíns_Profile</title>
+		
+		<meta charset="UTF-8">
+		
+		<!-- Link to bootstrap -->
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		
+		<!-- Link to my style.css page -->
+		<link href = "style.css" rel = "stylesheet">
+		
+		<!-- Calling a google font (Great Vibes) to use as the page title -->
+		<link href = "http://fonts.googleapis.com/css?family=Great+Vibes" rel = "stylesheet" type = "text/css"/>
+		
+	</head>
+	<!-- End of head -->
+	
+	<!-- Start of body -->
+	<!-- Calling my javascript functions -->
+	<body onload = "myTimer(); myDate(); Alert();">
+	
+		<!-- Start of page header -->
+		<div id = "header">
+			<div class = "row">
+			
+				<!-- Declaring header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+				
+					<!-- Page Header -->
+					<h1 id = "Name">Cillín Lyons</h1>
+					
+				</div>
+				
+				<br>
+			</div>
+		</div>
+		
+		<!-- End of page header -->
+		
+		<!-- Start of top navbar -->
+		<div class = "navbar navbar-inverse navbar-static-top">
+		
+			<!-- Declaring navbar as container -->
+			<div class = "container">
+			
+				<!-- Creation of button which appears in navbar if the screen size shrinks -->
+				<div id = "NavBar" class = "navbar-header">
+				
+					<!-- Start of button -->
+					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					
+						<!-- Icons on the button  -->
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						
+					</button>
+					<!-- End of button -->
+					
+				</div>
+				<!-- End of navbar button creation -->
+				
+					<!-- Declaring the navbar to be collapsable -->
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+					
+						<!-- Aligning the navbar items to the left-hand side -->
+						<!-- Populating navbar with sections -->
+						<!-- Start of navbar list -->
+						<ul class = "nav navbar-nav navbar-left">
+						
+							<!-- Activated list item -->
+							<li class = "active"><a href = "file:///C:/Bootstrap/Cillíns_Profile.html">About Me</a></li>
+							<li><a href = "file:///C:/Bootstrap/WorkExperience.html">Work Experience</a></li>
+							<li><a href = "file:///C:/Bootstrap/Skills.html">Skills</a></li>
+							<li><a href = "file:///C:/Bootstrap/Education.html">Education</a></li>
+							<li><a href = "file:///C:/Bootstrap/Awards.html">Awards</a></li>
+							<li><a href = "file:///C:/Bootstrap/Interests.html">Interests</a></li>
+							
+						</ul>
+						
+						<!-- A seperate list to display the date and time -->
+						<!-- Aligning the navbar items to the right-hand side -->
+						<ul class = "nav navbar-nav navbar-right">
+							
+							<!-- Calling and displaying my date javascript variable -->
+							<li><p id="date"></p></li>
+							
+							<!-- Calling and displaying my time javascript variable -->
+							<li><p id="time"></p></li>
+							
+						</ul>
+						<!-- End of Navbar list -->
+						
+					</div>
+					
+			</div>
+			
+		</div>
+		<!-- End of top navbar -->
+		
+		<!-- Start of jumbotron header -->
+		<div class = "container">
+		
+		<div class = "row">
+		
+				<!-- Declaring the header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+				
+					<div id = "TextHeader">
+					
+							<h1 id = "AboutMe">About Me</h1>
+							
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- End of jumbotron header -->
+		
+		<!-- Start of Carousel div -->
+		<!-- This carousel div will dispay images of Cillín in a slider -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		
+			  <!-- Start of list of carousel indicators -->
+			  <ol class="carousel-indicators">
+			  
+			  	<!-- List item 1 is declared as active -->
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			    <li data-target="#myCarousel" data-slide-to="3"></li>
+			    <li data-target="#myCarousel" data-slide-to="4"></li>
+			    <li data-target="#myCarousel" data-slide-to="5"></li>
+			    <li data-target="#myCarousel" data-slide-to="6"></li>
+			    <li data-target="#myCarousel" data-slide-to="7"></li>
+			    <li data-target="#myCarousel" data-slide-to="8"></li>
+			    
+			  </ol>
+			  <!-- End of list of carousel indicators -->
+			
+			  <!-- Start of inner carousel -->
+			  <div class="carousel-inner" role="listbox">
+			  
+				  <!-- Images for carousel -->
+				    <div class="item active">
+				    	<!-- Images are aligned central and declared responsive -->
+				      <img alt = "picture" src="me1.jpg" class="img-responsive center-block">
+				    </div>
+				
+				    <div class="item">
+				      <img alt = "picture" src="me2.jpg" class="img-responsive center-block">
+				    </div>
+				
+				    <div class="item">
+				      <img alt = "picture" src="me3.jpg" class="img-responsive center-block">
+				    </div>
+				
+				    <div class="item">
+				      <img alt = "picture" src="me4.jpg" class="img-responsive center-block">
+				    </div>
+				  
+				  	<div class="item">
+				      <img alt = "picture" src="me5.jpg" class="img-responsive center-block">
+				    </div>
+				  
+				  
+				  	<div class="item">
+				      <img alt = "picture" src="me6.jpg" class="img-responsive center-block">
+				    </div>
+				  
+				  
+				  	<div class="item">
+				      <img alt = "picture" src="me11.jpg" class="img-responsive center-block">
+				    </div>
+				  
+				  
+				  	<div class="item">
+				      <img alt = "picture" src="me8.jpg" class="img-responsive center-block">
+				    </div>
+				  
+				  	<div class="item">
+				      <img alt = "picture" src="me9.jpg" class="img-responsive center-block">
+				    </div>
+			 
+			</div>
+			<!-- End of inner carousel -->
+			
+			  <!-- Left and right controls -->
+			  <!-- Previous control -->
+			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  
+			  <!-- Next control -->
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+			  
+			</div>
+			<!-- End of Carousel div -->
+		
+		<!-- Start of jumbotron -->
+		<!-- Declaring and aligning the jumbotron -->
+		<div class = "jumbotron text-center vertical-right">
+		
+			<!-- Declaring jumbotron as container -->
+			<div class = "container">
+			
+				<div class = "row">
+					
+					<!-- Declaring the jumbotron as 12 col-spans wide -->
+					<div class = "col-md-12">
+					
+						<!-- Start of about me paragraph -->
+						<p id = "info">
+						Cillín is 21 years old as of last month and currently lives in Booterstown Co. Dublin. Cillín is now in his 4th year 
+						of college in D.I.T Kevin street, studying computer science infrastructure. Cilln is originally from Clondawkin in Dublin but has also 
+						lived in Sallins Co. Kildare, Kildangan Co. Kildare and Athgarvan Co. Kildare. There are five relatives in Cillíns family. He has one 
+						older sister who is a nurse and a younger brother who is a rugby fanatic. He also has 3 pugs called Lilly, Rufus and Lola. 
+						
+						<br><br>
+						
+						In his sixth year of secondary school Cillín thought long and hard about what he wanted to study in college. He was unsure what he wanted 
+						to do for a very long time until a spokesperson for waterford I.T visited his school and talked about computer courses. Cillín didn't have 
+						much experience or knowledge about computers, but he was very interested in the idea. So he put computing down as his first choice on his 
+						CAO and fortunately got it. In his 3rd year of college Cillín was awarded a scholarship to Korea. This was his first time leaving Europe, 
+						but he really enjoyed a successful semester over there. Cilln intends on travelling after he finishes his course. He hopes to work in the 
+						United States for a few years and then take a year out to travel around each continent of the world and
+						</p>
+						<!-- Start of about me paragraph -->
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- End of jumbotron -->
+		
+		<!-- Start of footer -->
+		<!-- The footer is a navbar similar to the top -->
+		<!-- Except this navbar is declared as fixed. This 
+			is so the social media buttons are constantly visible -->
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+		
+			<!-- Declaring the navbar as container -->
+			<div class = "container">
+			
+				<!-- Declaring the author of the site -->
+				<p> Built by Cillín Lyons</p>
+				
+			</div>
+			
+			<!-- Aligning social media icons to the right of the navbar  -->
+			<!-- Declaring right-hand side of navbar as socialmedia -->
+			<div id = "socialmedia" class = "container container-right">
+			
+				<p>
+					Follow Cillín on social media: 
+					<!-- Facebook image with link -->
+					<a href="https://www.facebook.com/cillin.lyons.1">
+					<img alt="facebook" src="facebook.png" width="25" height="25">
+					</a>
+					
+					<!-- Instagram image with link -->
+					<a href="https://instagram.com/cillin_l/">
+					<img alt="instagram" src="instagram.png" width="25" height="25">
+					</a>
+					
+					<!-- LinkedIn image with link -->
+					<a href="https://ie.linkedin.com/pub/cillin-lyons/8b/12a/5ba">
+					<img alt="linkedin" src="linkedin.png" width="25" height="25">
+					</a>
+				</p>
+			
+			</div>
+			
+		</div>
+		<!-- End of footer -->
+	
+		<!-- Link to bootstrap script -->
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "js/bootstrap.js"></script>
+		
+		<!-- Linking this page to the JavaScript.js page -->
+		<script src = "JavaScript.js"></script>
+		
+	</body>
+	<!-- End of body -->
+						<!-- Validation link: https://validator.w3.org/nu/#file -->
+</html>

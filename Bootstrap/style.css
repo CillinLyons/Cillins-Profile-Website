@@ -1,0 +1,245 @@
+/*CSS validation: https://jigsaw.w3.org/css-validator/validator*/
+
+/*Start of styles for every HTML page body.
+  This style prevents any extra whitespace on the website pages 
+  by keeping the overflow hidden and height and width at 100%. */
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+/*End of styles for every HTML page body. */
+
+/*Start of styles for the name Cillín Lyons on every HTML page. 
+  2 text shadows allows a 3d effect on the text. */
+#Name 
+{
+	font-size:70px;
+	color: #C29018;
+	background: #FFFFFF;
+	font-family: Verdana;
+	text-shadow: 3px 3px 0 #BF5E1A, 7px 6px 0 #5C3D28;
+	text-align: center;
+}
+/*End of styles for the name Cillín Lyons on every HTML page. */
+
+/*Start of styles for the time on every HTML page. 
+  It is given a padding-top to align it center of the navbar. */
+#time
+{
+	color:#fff;
+	padding-top:15px;
+}
+/*End of styles for the time on every HTML page. */
+
+/*Start of styles for the date on every HTML page. 
+  It is given a padding-top to align it center of the navbar. */
+#date
+{
+	color:#fff;
+	padding-top:15px;
+}
+/*End of styles for the date on every HTML page. */
+
+/*Start of styles for the About me Header on Cillíns_Profile.html. 
+  The Great Vibes font style is imported on every page. */
+#AboutMe 
+{
+  font: 400 50px/0.8 'Great Vibes';
+  color: #000000;
+  text-shadow: 4px 4px 3px rgba(0,0,0,0.1); 
+  text-align:center;
+}
+/*End of styles for the About me Header on Cillíns_Profile.html. */
+
+/*Start of styles for the WorkExperience.html page.
+  All headers are font size 30px and underlined. 
+  All dates are font size 15px. */
+#WantToSpeak
+{
+	font-size:30px;
+	text-decoration: underline;
+}
+
+#WantToSpeakDate
+{
+	font-size:15px;
+}
+
+#Dunnes
+{
+	font-size:30px;
+	text-decoration: underline;
+}
+
+#DunnesDate
+{
+	font-size:15px;
+}
+
+#Champions
+{
+	font-size:30px;
+	text-decoration: underline;
+}
+
+#ChampionsDate
+{
+	font-size:15px;
+}
+
+#LiftBoy
+{
+	font-size:30px;
+	text-decoration: underline;
+}
+
+#LiftBoyDate
+{
+	font-size:15px;
+}
+
+#Newbridge
+{
+	font-size:30px;
+	text-decoration: underline;
+}
+
+#NewbridgeDate
+{
+	font-size:15px;
+}
+
+#Curragh
+{
+	font-size:30px;
+	text-decoration: underline;
+}
+
+#CurraghDate
+{
+	font-size:15px;
+}
+/*End of styles for the WorkExperience.html page. */
+
+/*Start of styles for the Awards.html page.
+  All headers are font size 30px and underlined.
+  All dates are font size 15px. */
+#AwardsHeader
+{
+	font-size:30px;
+	text-decoration: underline;
+}
+#AwardsDate
+{
+	font-size:15px;
+}
+/*End of styles for the Awards.html page. */
+
+/* Start of styles for the carousel on the Cillíns_Profile.html page. */
+.carousel-inner
+{
+  width:100%;
+  max-height: 500px !important;
+}
+
+.mycarousel
+{
+	width:400px;
+       height:400px;
+}
+/* End of styles for the carousel on the Cillíns_Profile.html page. */
+      
+/* Start of styles for Education.html
+All headers are font size 25px and underlined 
+All dates are font size 15px */
+#SallinsSchool
+{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#SallinsSchoolDate
+{
+	font-size:15px;
+}
+
+#KildanganSchool
+{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#KildanganSchoolDate
+{
+	font-size:15px;
+}
+
+#AthgarvanSchool
+{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#AthgarvanSchoolDate
+{
+	font-size:15px;
+}
+/* End of styles for Education.html. */
+
+/*Start of styles for SecondarySchools.html.
+  All headers are font size 30px and underlined.
+  All dates are font size 15px. */
+#Patricians
+{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#PatriciansDate
+{
+	font-size:15px;
+}
+/* End of styles for Education.html. */
+
+/*Start of styles for College.html.
+  All headers are font size 30px and underlined.
+  All dates are font size 15px. */
+#DIT
+{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#DITDate
+{
+	font-size:15px;
+}
+
+#Hanyang
+{
+	font-size: 25px;
+	text-decoration: underline;
+}
+
+#HanyangDate
+{
+	font-size:15px;
+}
+/*End of styles for Education.html. */
+
+/*Start of styles for the bottom navbar. */
+.bottomnav {
+    overflow: hidden;
+    min-height: 100%;
+	position: relative;
+}
+
+#socialmedia
+{
+	text-align:right;
+}
+/*End of styles for the bottom navbar. */

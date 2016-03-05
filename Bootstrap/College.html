@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Cillín Lyons
+Student Number: C12505057
+Assignment: Portfolio
+Module: Rich Web Development
+Course Code: DT211c/4
+Start Date: 05/10/2015
+Finish Date: 27/10/2015	 
+-->
+
+<html>
+	<!-- College.html is page number 3 of the pagination on the under the Education topic.  
+		Here Cillíns discusses his DIT and Hanyang Experiences.-->
+
+	<!-- Start of head -->
+	<head>
+	
+		<title>CillínLyons-C12505057-College</title>
+		
+		<meta charset="UTF-8">
+		
+		<!-- Link to bootstrap -->
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		
+		<!-- Link to my style.css page -->
+		<link href = "style.css" rel = "stylesheet">
+		
+		<!-- Calling a google font (Great Vibes) to use as the page title -->
+		<link href = "http://fonts.googleapis.com/css?family=Great+Vibes" rel = "stylesheet" type = "text/css"/>
+		
+	</head>
+	<!-- End of head -->
+	
+	<!-- Start of body -->
+	<!-- Calling my javascript functions -->
+	<body onload = "myTimer(); myDate();">
+	
+		<!-- Start of page header -->
+		<div id = "header">
+			<div class = "row">
+			
+				<!-- Declaring header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+				
+					<!-- Page Header -->
+					<h1 id = "Name">Cillín Lyons</h1>
+				
+				</div>
+				
+				<br>
+			</div>
+		</div>
+		<!-- End of page header -->
+		
+		<!-- Start of top navbar -->
+		<div class = "navbar navbar-inverse navbar-static-top">
+		
+			<!-- Declaring navbar as container -->
+			<div class = "container">
+			
+				<!-- Creation of button which appears in navbar if the screen size shrinks -->
+				<div id = "NavBar" class = "navbar-header">
+				
+					<!-- Start of button -->
+					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					
+						 <!-- Icons on the button  -->
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						
+					</button>
+					<!-- End of button -->
+					
+				</div>
+				<!-- End of navbar button creation -->
+				
+					<!-- Declaring the navbar to be collapsable -->
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+						
+						<!-- Aligning the navbar items to the left-hand side -->
+						<!-- Populating navbar with sections -->
+						<!-- Start of navbar list -->
+						<ul class = "nav navbar-nav navbar-left">
+						
+							<li><a href = "file:///C:/Bootstrap/Cillíns_Profile.html">About Me</a></li>
+							<li><a href = "file:///C:/Bootstrap/WorkExperience.html">Work Experience</a></li>
+							<li><a href = "file:///C:/Bootstrap/Skills.html">Skills</a></li>
+							<!-- Activated list item -->
+							<li class = "active"><a href = "file:///C:/Bootstrap/Education.html">Education</a></li>
+							<li><a href = "file:///C:/Bootstrap/Awards.html">Awards</a></li>
+							<li><a href = "file:///C:/Bootstrap/Interests.html">Interests</a></li>
+							
+						</ul>
+						
+						<!-- A seperate list to display the date and time -->
+						<!-- Aligning the navbar items to the right-hand side -->
+						<ul class = "nav navbar-nav navbar-right">
+							
+							<!-- Calling and displaying my date javascript variable -->
+							<li><p id="date"></p></li>
+							
+							<!-- Calling and displaying my time javascript variable -->
+							<li><p id="time"></p></li>
+							
+						</ul>
+						
+						<!-- End of Navbar list -->
+				   </div>
+			</div>
+		</div>
+		<!-- End of top navbar  -->
+		
+		<!-- Start of jumbotron header -->
+		<div class = "container">
+		
+			<div class = "row">
+			
+				<!-- Declaring the header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+					<div id = "TextHeader">
+							<h1 id = "AboutMe">College</h1>
+					</div>
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- End of jumbotron header -->
+		
+		<!-- Start of jumbotron -->
+		<!-- Declaring and aligning the jumbotron -->
+		<div class = "jumbotron text-center vertical-right">
+			
+			<!-- Declaring jumbotron as container -->
+			<div class = "container">
+			
+				<div class = "row">
+				
+					<!-- Declaring the jumbotron as 12 col-spans wide -->
+					<div class = "col-md-12">
+					
+						<!-- Jumbotron heading1 -->
+						<!-- DIT -->
+						<h1 id = "DIT">D.I.T</h1>
+						<h2 id = "DITDate"> 03/09/2012 - Present</h2>
+						
+						<!-- Heading1 information -->
+						<p>Cillín is currently in his 4th year of a four year computer science 
+						infrastructure course in D.I.T Kevin Street. He will graduate next 
+						September.</p>
+						<br>
+						
+						<!-- Jumbotron heading2 -->
+						<!-- Hanyang -->
+						<h2 id = "Hanyang">Hanyang University</h2>
+						<h2 id = "HanyangDate"> 27/02/2015 - 21/06/2015</h2>
+						
+						<!-- Heading2 information -->
+						<p>Last semester Cillín received a scholarship. Being the first
+						 native irish person from DIT to receive a scholarship for Hanyang 
+						 University. He studied computer engineering in Hanyang University, 
+						 Seoul, Korea. Here Cillín studied concepts of programming, object 
+						 oriented programming, software engineering and Korean survival course. 
+						 He also took part in a new DIT module called global classroom, which 
+						 was worth 10 credits. This involved team work on a software project 
+						 with people from Finland and Korea. Cillín was the team leader of his 
+						 group and successfully completed this project. Last semester Cillín 
+						 earned a 1:1 grade. Overall for third year he earned a 2:1 grade.</p>
+					</div>
+					
+				</div>
+				
+			</div>
+		
+		</div>
+		<!-- End of jumbotron -->
+		
+		<!-- Start of pagination -->
+		<!-- This pagination guides users through my 3 pages on education -->
+		<!-- Aligning pagination center -->
+		<div class="text-center">
+		
+			<!-- Start of pagination button list -->
+		  <ul class="pagination">
+		  
+		  	<!-- Prev button -->
+		    <li><a href="file:///C:/Bootstrap/SecondarySchool.html">Prev</a></li>
+		    
+		    <!-- No.1 button -->
+		    <!-- This is a link to the primary school information -->
+		    <li><a href="file:///C:/Bootstrap/Education.html">1</a></li>
+		    
+		    <!-- No.2 button -->
+		    <!-- This is a link to the secondary school information -->
+		    <li><a href="file:///C:/Bootstrap/SecondarySchool.html">2</a></li>
+		    
+		    <!-- No.3 button -->
+		    <!-- This is a link to the college information -->
+		    <li class="active"><a href="file:///C:/Bootstrap/College.html">3</a></li>
+		    
+		    <!-- Next button -->
+		    <!-- This has been disabled as there are no more pages -->
+		    <li class="disabled"><a href="#">Next</a></li>
+		    
+		  </ul>
+		  <!-- End of pagination button list -->
+		  
+		</div>
+		<!-- End of pagination -->
+		    
+   	<!-- These breaks must be inserted or else the pagination 
+   	will hide under the footer when screen is decreased -->
+   		<br>
+		<br>
+		
+		
+		<!-- Start of footer -->
+		<!-- The footer is a navbar similar to the top -->
+		<!-- Except this navbar is declared as fixed. This 
+		is so the social media buttons are constantly visible -->
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+		
+			<!-- Declaring the navbar as container -->
+			<div class = "container">
+			
+				<!-- Declaring the author of the site -->
+				<p> Built by Cillín Lyons</p>
+				
+			</div>
+			
+			<!-- Aligning social media icons to the right of the navbar  -->
+			<!-- Declaring right-hand side of navbar as socialmedia -->
+			<div id = "socialmedia" class = "container container-right">
+			
+				<p>
+					Follow Cillín on social media: 
+					<!-- Facebook image with link -->
+					<a href="https://www.facebook.com/cillin.lyons.1">
+					<img alt="facebook" src="facebook.png" width="25" height="25">
+					</a>
+					
+					<!-- Instagram image with link -->
+					<a href="https://instagram.com/cillin_l/">
+					<img alt="instagram" src="instagram.png" width="25" height="25">
+					</a>
+					
+					<!-- LinkedIn image with link -->
+					<a href="https://ie.linkedin.com/pub/cillin-lyons/8b/12a/5ba">
+					<img alt="linkedin" src="linkedin.png" width="25" height="25">
+					</a>
+				</p>
+			
+			</div>
+		</div>
+		<!-- End of footer -->
+	
+		<!-- Link to bootstrap script -->
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "js/bootstrap.js"></script>
+		
+		<!-- Linking this page to the JavaScript.js page -->
+		<script src = "JavaScript.js"></script>
+		
+	</body>
+	<!-- End of body -->
+						<!-- Validation link: https://validator.w3.org/nu/#file -->
+</html>

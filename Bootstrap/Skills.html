@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Cillín Lyons
+Student Number: C12505057
+Assignment: Portfolio
+Module: Rich Web Development
+Course Code: DT211c/4
+Start Date: 05/10/2015
+Finish Date: 27/10/2015	 
+-->
+
+<html>
+
+	<!-- Start of head -->
+	<head>
+	
+		<title>CillínLyons-C12505057-WorkExperience</title>
+		
+		<meta charset="UTF-8">
+		
+		<meta name = "viewport" content = "width=width-device, initial-scale=1.0">
+		
+		<!-- Link to bootstrap -->
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		
+		<!-- Link to my style.css page -->
+		<link href = "style.css" rel = "stylesheet">
+		
+		<!-- Calling a google font (Great Vibes) to use as the page title -->
+		<link href = "http://fonts.googleapis.com/css?family=Great+Vibes" rel = "stylesheet" type = "text/css"/>
+		
+	</head>
+	<!-- End of head -->
+	
+	<!-- Calling my javascript functions -->
+	<body onload = "myTimer(); myDate();">
+	
+		<!-- Start of page header -->
+		<div id = "header">
+		
+			<div class = "row">
+			
+				<!-- Declaring header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+				
+					<!-- Page Header -->
+					<h1 id = "Name">Cillín Lyons</h1>
+					
+				</div>
+				
+				<br>
+				
+			</div>
+			
+		</div>
+		<!-- End of page header -->
+		
+	
+		<!-- Start of top navbar -->
+		<div class = "navbar navbar-inverse navbar-static-top">
+		
+			<!-- Declaring navbar as container -->
+			<div class = "container">
+			
+				<!-- Creation of button which appears in navbar if the screen size shrinks -->
+				<div id = "NavBar" class = "navbar-header">
+				
+					<!-- Start of button -->
+					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					
+						 <!-- Icons on the button  -->
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						
+					</button>
+					<!-- End of button -->
+					
+				</div>
+				<!-- End of navbar button creation -->
+				
+					<!-- Declaring the navbar to be collapsable -->
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+						
+						<!-- Aligning the navbar items to the left-hand side -->
+						<!-- Populating navbar with sections -->
+						<!-- Start of navbar list -->
+						<ul class = "nav navbar-nav navbar-left">
+						
+							<li><a href = "file:///C:/Bootstrap/Cillíns_Profile.html">About Me</a></li>
+							<li><a href = "file:///C:/Bootstrap/WorkExperience.html">Work Experience</a></li>
+							<!-- Activated list item -->
+							<li class = "active"><a href = "file:///C:/Bootstrap/Skills.html">Skills</a></li>
+							<li><a href = "file:///C:/Bootstrap/Education.html">Education</a></li>
+							<li><a href = "file:///C:/Bootstrap/Awards.html">Awards</a></li>
+							<li><a href = "file:///C:/Bootstrap/Interests.html">Interests</a></li>
+							
+						</ul>
+						
+						<!-- A seperate list to display the date and time -->
+						<!-- Aligning the navbar items to the right-hand side -->
+						<ul class = "nav navbar-nav navbar-right">
+							
+							<!-- Calling and displaying my date javascript variable -->
+							<li><p id="date"></p></li>
+							
+							<!-- Calling and displaying my time javascript variable -->
+							<li><p id="time"></p></li>
+							
+						</ul>
+						
+						<!-- End of Navbar list -->
+				   </div>
+				   
+			</div>
+			
+		</div>
+		<!-- End of top navbar  -->
+		
+		<!-- Start of jumbotron header -->
+		<div class = "container">
+		
+			<div class = "row">
+		
+				<!-- Declaring the header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+					<div id = "TextHeader">
+							<h1 id = "AboutMe">Skills</h1>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- End of jumbotron header -->
+		
+		<!-- Start of jumbotron -->
+		<!-- Declaring and aligning the jumbotron -->
+		<div class = "jumbotron text-center vertical-right">
+		
+			<!-- Start of panel group -->
+			<!-- This panel group contains a list. The headers in this list are Cillíns skills.
+				Once these headers are selected by a user, information about how Cillín acquired
+				these skills will appear under the associated header.-->
+			<div class="panel-group">
+			
+			  <div class="panel panel-default">
+			  
+			  	<!-- Start of first panel item -->
+			  	<!-- First panel headier -->
+			  	<!-- Java -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#java">Java</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="java" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- Java information -->
+				        <p>
+				        	Cillín Studied java first in 2014 for mobile software development.
+				        	Then he studied it again in 2015 for object oriented programming in Korea.
+				        	He is currently making his final year project in java.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of first panel item -->
+			    
+			    <!-- Start of second panel item -->
+			    <!-- Second panel header -->
+			    <!-- Python -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#python">Python</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="python" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- Python information -->
+			        	<p>
+			        		Cillín studied python in his 2nd year in D.I.T for two semesters.
+			        	</p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of second panel item -->
+			    
+			    <!-- Start of third panel item -->
+			    <!-- Third panel header -->
+			    <!-- C -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#c">C</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="c" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- C information -->
+				        <p>
+				        	This was Cillíns first language to study.
+				        	He had it for two years in his first year of college.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of third panel item -->
+			    
+			    <!-- Start of fourth panel item -->
+			    <!-- Fourth panel header -->
+			    <!-- XML -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#xml">XML</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="xml" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- XML information -->
+				        <p>
+				        	Cillín learned XML in his 3rd year and is also using 
+				        	it now in his final year for his final year project.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of fourth panel item -->
+			    
+			    <!-- Start of fifth panel item -->
+			    <!-- Fifth panel header -->
+			    <!-- HTML -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#HTML">HTML</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="HTML" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- HTML information -->
+				        <p>
+				        	Cillín first started learning about HTML in his 2nd year of 
+				        	college for web development and is also learning it now in his final year for
+				        	rich web development.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of fifth panel item -->
+			    
+			    <!-- Start of sixth panel item -->
+			    <!-- Sixth panel header -->
+			    <!-- CSS -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#css">CSS</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="css" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- CSS information -->
+				        <p>
+				        	Cillín first started learning about CSS in his 2nd year of 
+				        	college for web development and is also learning it now in his final year for
+				        	rich web development.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of sixth panel item -->
+			    
+			    <!-- Start of seventh panel item -->
+			    <!-- Seventh panel header -->
+			    <!-- Javascript -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#javascript">JavaScript</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="javascript" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- Javascript information -->
+				        <p>
+				        	This is Cillíns first year to study Javascript. He is
+				        	studying it as part of his rich web development module
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of seventh panel item -->
+			    
+			    <!-- Start of eight panel item -->
+			    <!-- Eight panel header -->
+			    <!-- Bootstrap -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#bootstrap">Bootstrap</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="bootstrap" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- Bootstrap information -->
+				        <p>
+				        	This is Cillíns first year to study Bootstrap. He is
+				        	studying it as part of his rich web development module.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of eight panel item -->
+			    
+			    <!-- Start of ninth panel item -->
+			    <!-- Ninth panel header -->
+			    <!-- PHP -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#php">PHP</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="php" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- PHP information -->
+				        <p>
+				        	Cillín first start studying PHP in 2nd year for
+				        	web devlopment. He also used it for developing apps during the summer.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of ninth panel item -->
+			    
+			    <!-- Start of tenth panel item -->
+			    <!-- Tenth panel header -->
+			    <!-- mySQL -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#mysql">mySQL</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="mysql" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- mySQL information -->
+				        <p>
+				        	Cillín has been studying mySQL the past
+				        	three years. This is one of his favourite modules.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of tenth panel item -->
+			    
+			    <!-- Start of eleventh panel item -->
+			    <!-- Eleventh panel header -->
+			    <!-- PL/SQL -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#plsql">PL/SQL</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="plsql" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- PL/SQL information -->
+				        <p>
+				        	Cillín was first introduced to PL/SQL last year
+				        	in databases and is still currently using it in advanced data management.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of eleventh panel item -->
+			    
+			    <!-- Start of twelfth panel item -->
+			    <!-- Twelfth panel header -->
+			    <!-- Arduino -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#arduino">Arduino</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="arduino" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- Arduino information -->
+				        <p>
+				        	Cillín learned how to wire Arduinos and write code for them
+				         	in his programming for smart objects class in third year. He is now using them as part 
+				         	of his final year project.
+				        </p>
+			         </li>
+			      </ul>
+			    </div>
+			    <!-- End of twelfth panel item -->
+			    
+			    <!-- Start of thirteenth panel item -->
+			    <!-- Thirteenth panel header -->
+			    <!-- Fritzing -->
+			    <div class="panel-heading">
+			    
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" href="#fritzing">Fritzing</a>
+			      </h4>
+			      
+			    </div>
+			    <!-- Creating a collapsable panel item -->
+			    <div id="fritzing" class="panel-collapse collapse">
+			      <ul class="list-group">
+			        <li class="list-group-item">
+			        	<!-- Fritzing information -->
+				        <p>
+				        	Cillín learned how to wire Fritzing software boards in his programming for smart
+				        	objects class in third year. He is now using them as part of his final year project.
+				        </p>
+			        </li>
+			      </ul>
+			    </div>
+			    <!-- End of thirteenth panel item -->
+			    
+			  </div>
+			  
+			</div>
+			<!-- End of panel group -->
+			
+		</div>
+		
+		<!-- Start of footer -->
+		<!-- The footer is a navbar similar to the top -->
+		<!-- Except this navbar is declared as fixed. This 
+		is so the social media buttons are constantly visible -->
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+		
+			<!-- Declaring the navbar as container -->
+			<div class = "container">
+			
+				<!-- Declaring the author of the site -->
+				<p> Built by Cillín Lyons</p>
+				
+			</div>
+			
+			<!-- Aligning social media icons to the right of the navbar  -->
+			<!-- Declaring right-hand side of navbar as socialmedia -->
+			<div id = "socialmedia" class = "container container-right">
+			
+				<p>
+					Follow Cillín on social media: 
+					<!-- Facebook image with link -->
+					<a href="https://www.facebook.com/cillin.lyons.1">
+					<img alt="facebook" src="facebook.png" width="25" height="25">
+					</a>
+					
+					<!-- Instagram image with link -->
+					<a href="https://instagram.com/cillin_l/">
+					<img alt="instagram" src="instagram.png" width="25" height="25">
+					</a>
+					
+					<!-- LinkedIn image with link -->
+					<a href="https://ie.linkedin.com/pub/cillin-lyons/8b/12a/5ba">
+					<img alt="linkedin" src="linkedin.png" width="25" height="25">
+					</a>
+				</p>
+			
+			</div>
+		</div>
+		<!-- End of footer -->
+	
+		<!-- Link to bootstrap script -->
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "js/bootstrap.js"></script>
+		
+		<!-- Linking this page to the JavaScript.js page -->
+		<script src = "JavaScript.js"></script>
+	</body>
+	<!-- End of body -->
+						<!-- Validation link: https://validator.w3.org/nu/#file -->
+</html>

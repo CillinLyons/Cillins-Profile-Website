@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Cillín Lyons
+Student Number: C12505057
+Assignment: Portfolio
+Module: Rich Web Development
+Course Code: DT211c/4
+Start Date: 05/10/2015
+Finish Date: 27/10/2015	 
+-->
+
+<html>
+
+	<!-- Interests.html contains pills within a jumbotron.
+		 Each pill has an interest as a heading and contains
+		 information on that heading. -->
+
+	<!-- Start of head -->
+	<head>
+	
+		<title>CillínLyons-C12505057-WorkExperience</title>
+		
+		<meta charset="UTF-8">
+		
+		<meta name = "viewport" content = "width=width-device, initial-scale=1.0">
+		
+		<!-- Link to bootstrap stylesheet -->
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		
+		<!-- Link to my style.css page -->
+		<link href = "style.css" rel = "stylesheet">
+		
+		<!-- Calling a google font (Great Vibes) to use as the page title -->
+		<link href = "http://fonts.googleapis.com/css?family=Great+Vibes" rel = "stylesheet" type = "text/css"/>
+		
+	</head>
+	<!-- End of head -->
+	
+	<!-- Start of body -->
+	<!-- Calling my javascript functions -->
+	<body onload = "myTimer(); myDate();">
+	
+		<!-- Start of page header -->
+		<div id = "header">
+			<div class = "row">
+			
+				<!-- Declaring header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+				
+					<!-- Page Header -->
+					<h1 id = "Name">Cillín Lyons</h1>
+					
+				</div>
+				
+				<br>
+				
+			</div>
+			
+		</div>
+		<!-- End of page header -->
+		
+	
+		<!-- Start of top navbar -->
+		<div class = "navbar navbar-inverse navbar-static-top">
+		
+			<!-- Declaring navbar as container -->
+			<div class = "container">
+			
+				<!-- Creation of button which appears in navbar if the screen size shrinks -->
+				<div id = "NavBar" class = "navbar-header">
+				
+					<!-- Start of button -->
+					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					
+						 <!-- Icons on the button  -->
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						
+					</button>
+					<!-- End of button -->
+					
+				</div>
+				<!-- End of navbar button creation -->
+				
+					<!-- Declaring the navbar to be collapsable -->
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+						
+						<!-- Aligning the navbar items to the left-hand side -->
+						<!-- Populating navbar with sections -->
+						<!-- Start of navbar list -->
+						<ul class = "nav navbar-nav navbar-left">
+						
+							<li><a href = "file:///C:/Bootstrap/Cillíns_Profile.html">About Me</a></li>
+							<li><a href = "file:///C:/Bootstrap/WorkExperience.html">Work Experience</a></li>
+							<li><a href = "file:///C:/Bootstrap/Skills.html">Skills</a></li>
+							<li><a href = "file:///C:/Bootstrap/Education.html">Education</a></li>
+							<li><a href = "file:///C:/Bootstrap/Awards.html">Awards</a></li>
+							<!-- Activated list item -->
+							<li class = "active"><a href = "file:///C:/Bootstrap/Interests.html">Interests</a></li>
+							
+						</ul>
+						
+						<!-- A seperate list to display the date and time -->
+						<!-- Aligning the navbar items to the right-hand side -->
+						<ul class = "nav navbar-nav navbar-right">
+							
+							<!-- Calling and displaying my date javascript variable -->
+							<li><p id="date"></p></li>
+							
+							<!-- Calling and displaying my time javascript variable -->
+							<li><p id="time"></p></li>
+							
+						</ul>
+						<!-- End of Navbar list -->
+						
+				   </div>
+				    
+			</div>
+			
+		</div>
+		<!-- End of top navbar  -->
+		
+		<!-- Start of jumbotron header -->
+		<div class = "container">
+		
+			<div class = "row">
+		
+				<!-- Declaring the header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+					<div id = "TextHeader">
+							<h1 id = "AboutMe">Interests</h1>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- End of jumbotron header -->
+		
+		<!-- Start of jumbotron -->
+		<!-- Declaring and aligning the jumbotron -->
+		<div class = "jumbotron text-center vertical-right">
+		
+			<!-- Declaring jumbotron as container -->
+			<div class = "container">
+			
+				<div class = "row">
+				
+					<!-- Declaring jumbotron as container -->
+					<div class = "col-md-12">
+					
+						<!-- Start of pill list -->
+						<!-- This pill list will contain headers which are different categories 
+							for each of Cillíns interests -->
+						<ul class="nav nav-pills">
+						
+						  <!-- First list item is declared active -->
+						  <li class="active"><a data-toggle="pill" href="#Rugby">Rugby</a></li>
+						  <li><a data-toggle="pill" href="#Football">Football</a></li>
+						  <li><a data-toggle="pill" href="#UFC">UFC</a></li>
+						  <li><a data-toggle="pill" href="#Music">Music</a></li>
+						  <li><a data-toggle="pill" href="#Socializing">Socializing</a></li>
+						  
+						</ul>
+						<!-- End of pill list -->
+						
+						<!-- Start of pill content -->
+						<div class="tab-content">
+						
+						  <!-- Start of first pill content -->
+						  <!-- Pill header -->
+						  <!-- Rugby -->
+						  <div id="Rugby" class="tab-pane fade in active">
+						  <br>
+						  
+						    <!-- Pill content -->
+						    <p>
+						    	Cillín is a huge fan of rugby. He follows his home provience Leinster and of course
+						  		Ireland. He has gone to watch them play on a few occasions and plans on going to Japan
+						  		for the next rugby world cup.
+						  	</p>
+						  
+						  </div>
+						  <!-- End of first pill content -->
+						  
+						  <!-- Start of second pill content -->
+						  <!-- Pill header -->
+						  <!-- Football -->
+						  <div id="Football" class="tab-pane fade">
+						  
+						    <br>
+						    
+						    <!-- Pill content -->
+						    <p>
+						    	Cillín started playing football when he was nine years old. His first club was
+						    	Athgarvan Villa because that was his home team at the time. He then went on to play
+						    	for Sallins Celtic for six years. During his time at Sallins he made it onto the 
+						    	Kildare County team. He had great success with Kildare. He was on the first Kildare 
+						    	team to ever get a bronse medal at the Kennedy Cup. A year later he went to England 
+						    	with Kildare and played against Nottingham Forrest academy.
+						    </p>
+						    
+						  </div>
+						  <!-- End of second pill content -->
+						  
+						  <!-- Start of third pill content -->
+						  <!-- Pill header -->
+						  <!-- UFC -->
+						  <div id="UFC" class="tab-pane fade">
+						  
+						    <br>
+						    
+						    <!-- Pill content -->
+						    <p>
+						    	Cillín practised various martial arts when through out his live in different regions.
+						    	These included kick-boxing, wrestling and mixed martial arts. He also really enjoys to
+						    	watch UFC when ever events are on. He enjoys watching fighters such as John Jones, 
+						    	Conor Mcgregor, Joseph Duffy and Anderson Silva.
+						    </p>
+						    
+						  </div>
+						  <!-- End of third pill content -->
+						  
+						  <!-- Start of fourth pill content -->
+						  <!-- Pill header -->
+						  <!-- Music -->
+						  <div id="Music" class="tab-pane fade">
+						  
+						    <br>
+						    
+						    <!-- Pill content -->
+						    <p>
+						    	Cillín is a lover of various music genres. He went to his first festival (oxegen) 
+						    	when he was 14. Since then, during the summer he would usually attend a festival or 2.
+						     	Cillín played the guitar for a short period of time when he was 10. Feel free to follow
+						     	Cillín on SoundCloud: 
+						     <br>
+						     
+						     <!-- Link to Cillíns Souncloud account -->
+							<a href="https://soundcloud.com/cillin_lyons">
+							<!-- Image of Soundcloud logo -->
+							<img alt="soundcloud" data-toggle="tooltip" title="SoundCloud" src="soundcloud.jpg" width="100" height="60">
+							</a>
+							
+							</p>
+							
+						  </div>
+						  <!-- End of fourth pill content -->
+						  
+						  <!-- Start of fifth pill content -->
+						  <!-- Pill header -->
+						  <!-- Socializing -->
+						  <div id="Socializing" class="tab-pane fade">
+						  
+						    <br>
+						    
+						    <!-- Pill content -->
+						    <p>
+						    	Cillín enjoys hanging out with friends reguarly. This would usually involve watching 
+						    	a rugby or football match with a beverage, going to a cinema, attending a festival, travelling, 
+						    	going to a night club or just hanging out in a pub.
+						    </p>
+						    
+						  </div>
+						  <!-- End of fifth pill content -->
+						
+						</div>
+						<!-- End of pill content -->
+					
+					</div>
+				
+				</div>
+			
+			</div>
+			
+		</div>
+		<!-- End of jumbotron -->
+		
+		<!-- Start of footer -->
+		<!-- The footer is a navbar similar to the top -->
+		<!-- Except this navbar is declared as fixed. This 
+		is so the social media buttons are constantly visible -->
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+		
+			<!-- Declaring the navbar as container -->
+			<div class = "container">
+			
+				<!-- Declaring the author of the site -->
+				<p> Built by Cillín Lyons</p>
+				
+			</div>
+			
+			<!-- Aligning social media icons to the right of the navbar  -->
+			<!-- Declaring right-hand side of navbar as socialmedia -->
+			<div id = "socialmedia" class = "container container-right">
+			
+				<p>
+					Follow Cillín on social media: 
+					<!-- Facebook image with link -->
+					<a href="https://www.facebook.com/cillin.lyons.1">
+					<img alt="facebook" src="facebook.png" width="25" height="25">
+					</a>
+					
+					<!-- Instagram image with link -->
+					<a href="https://instagram.com/cillin_l/">
+					<img alt="instagram" src="instagram.png" width="25" height="25">
+					</a>
+					
+					<!-- LinkedIn image with link -->
+					<a href="https://ie.linkedin.com/pub/cillin-lyons/8b/12a/5ba">
+					<img alt="linkedin" src="linkedin.png" width="25" height="25">
+					</a>
+				</p>
+			
+			</div>
+		</div>
+		<!-- End of footer -->
+	
+		<!-- Link to bootstrap script -->
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "js/bootstrap.js"></script>
+		
+		<!-- Linking this page to the JavaScript.js page -->
+		<script src = "JavaScript.js"></script>
+		
+	</body>
+	<!-- End of body -->
+						<!-- Validation link: https://validator.w3.org/nu/#file -->
+</html>

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+
+<!-- 
+Name: Cillín Lyons
+Student Number: C12505057
+Assignment: Portfolio
+Module: Rich Web Development
+Course Code: DT211c/4
+Start Date: 05/10/2015
+Finish Date: 27/10/2015	 
+-->
+
+<html>
+
+	<!-- WorkExperience.html uses tabs to navigate through Cillíns work experience history.
+		 The tab heading indicate his job roles. The information that follows supply details
+		 of the companies he worked for with that role and the period of time he worked for 
+		 that role. -->
+
+	<!-- Start of head -->
+	<head>
+	
+		<title>CillínLyons-C12505057-WorkExperience</title>
+		
+		<meta charset="UTF-8">
+		
+		<meta name = "viewport" content = "width=width-device, initial-scale=1.0">
+		
+		<!-- Link to bootstrap stylesheet -->
+		<link href = "css/bootstrap.min.css" rel = "stylesheet">
+		
+		<!-- Link to my style.css page -->
+		<link href = "style.css" rel = "stylesheet">
+		
+		<!-- Calling a google font (Great Vibes) to use as the page title -->
+		<link href = "http://fonts.googleapis.com/css?family=Great+Vibes" rel = "stylesheet" type = "text/css"/>
+		
+	</head>
+	<!-- End of head -->
+	
+	<!-- Start of body -->
+	<!-- Calling my javascript functions -->
+	<body onload = "myTimer(); myDate();">
+	
+		<!-- Start of page header -->
+		<div id = "header">
+		
+			<div class = "row">
+			
+				<!-- Declaring header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+				
+					<!-- Page Header -->
+					<h1 id = "Name">Cillín Lyons</h1>
+					
+				</div>
+				
+				<br>
+				
+			</div>
+			
+		</div>
+		<!-- End of page header -->
+		
+	
+		<!-- Start of top navbar -->
+		<div class = "navbar navbar-inverse navbar-static-top">
+		
+			<!-- Declaring navbar as container -->
+			<div class = "container">
+			
+				<!-- Creation of button which appears in navbar if the screen size shrinks -->
+				<div id = "NavBar" class = "navbar-header">
+				
+					<!-- Start of button -->
+					<button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
+					
+						 <!-- Icons on the button  -->
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						<span class = "icon-bar"></span>
+						
+					</button>
+					<!-- End of button -->
+					
+				</div>
+				<!-- End of navbar button creation -->
+				
+					<!-- Declaring the navbar to be collapsable -->
+					<div class = "collapse navbar-collapse navHeaderCollapse">
+						
+						<!-- Aligning the navbar items to the left-hand side -->
+						<!-- Populating navbar with sections -->
+						<!-- Start of navbar list -->
+						<ul class = "nav navbar-nav navbar-left">
+						
+							<li><a href = "file:///C:/Bootstrap/Cillíns_Profile.html">About Me</a></li>
+							<!-- Activated list item -->
+							<li class = "active"><a href = "file:///C:/Bootstrap/WorkExperience.html">Work Experience</a></li>
+							<li><a href = "file:///C:/Bootstrap/Skills.html">Skills</a></li>
+							<li><a href = "file:///C:/Bootstrap/Education.html">Education</a></li>
+							<li><a href = "file:///C:/Bootstrap/Awards.html">Awards</a></li>
+							<li><a href = "file:///C:/Bootstrap/Interests.html">Interests</a></li>
+							
+						</ul>
+						
+						<!-- A seperate list to display the date and time -->
+						<!-- Aligning the navbar items to the right-hand side -->
+						<ul class = "nav navbar-nav navbar-right">
+							
+							<!-- Calling and displaying my date javascript variable -->
+							<li><p id="date"></p></li>
+							
+							<!-- Calling and displaying my time javascript variable -->
+							<li><p id="time"></p></li>
+							
+						</ul>
+						<!-- End of Navbar list -->
+						
+				   </div>
+				   
+			</div>
+			
+		</div>
+		<!-- End of top navbar  -->
+		
+		<!-- Start of jumbotron header -->
+		<div class = "container">
+		
+		
+			<div class = "row">
+		
+				<!-- Declaring the header to be 12 col-spans wide -->
+				<div class = "col-md-12">
+				
+					<div id = "TextHeader">
+							<h1 id = "AboutMe">Work Experience</h1>
+					</div>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<!-- End of jumbotron header -->
+		
+		<!-- Start of jumbotron -->
+		<!-- Declaring and aligning the jumbotron -->
+		<div class = "jumbotron text-center vertical-right">
+		
+			<!-- Declaring jumbotron as container -->
+			<div class = "container">
+			
+				<div class = "row">
+				
+					<!-- Declaring the jumbotron as 12 col-spans wide -->
+					<div class = "col-md-12">
+				
+						<!-- Start of tab table div -->
+						<!-- This tab table contains a different tab for different job categories -->
+						<!-- It starts from my most previous job, back in time through my other jobs -->
+						<div class="tabbable"> 
+						
+						  <!-- Start of list of tab headers -->
+						  <ul class="nav nav-tabs">
+						  
+						  	<!-- English teacher tab is made active first -->
+						    <li class="active"><a href="#tab1" data-toggle="tab">English Teacher</a></li>
+						    <li><a href="#tab2" data-toggle="tab">Sales Assistant</a></li>
+						    <li><a href="#tab3" data-toggle="tab">Sales Representative</a></li>
+						    <li><a href="#tab4" data-toggle="tab">Waiter</a></li>
+						    <li><a href="#tab5" data-toggle="tab">Bartender</a></li>
+						    
+						  </ul>
+						  <!-- End of list of tab headers -->
+						  
+						  <!-- Start of tab content -->
+						  <div class="tab-content">
+						  
+						    <!-- Start of first tab -->
+						    <!-- WantToSpeak -->
+						    <div class="tab-pane active" id="tab1">
+						    
+							    <h1 id = "WantToSpeak">Want To Speak</h1>
+							    <h2 id = "WantToSpeakDate">15/03/2015 - 20/06/2015</h2>
+							      <p>
+							      	Cillín was a group leader in English teaching group discussions. 
+							      	This job involves conversing with mainly Korean people and improving their 
+							      	English. Along with answering any questions about English Grammer or 
+							      	vocabulary. Every week Cillín would discuss a different topic with his 
+							      	students. This job gave Cillín a great opportunity to improve his leadership, 
+							      	people and communication skills.
+							      </p>
+						      
+						    </div>
+						    <!-- End of first tab -->
+						    
+						    <!-- Start of second tab -->
+						    <!-- Dunnes Stores and Champion Sports -->
+						    <div class="tab-pane" id="tab2">
+						    
+							    <h1 id = "Dunnes">Dunnes Stores</h1>
+							    <h2 id = "DunnesDate">08/08/2013 - 01/02/2015</h2>
+							      <p>
+							      	Grocery clerks are responsible to make sure 
+							      	the grocery section of the store is well-stocked for our customers. 
+							      	They assist in receiving, storing, and stocking of products while ensuring 
+							      	proper product rotation and quality. They create and build product displays, 
+							      	ensure proper fronting of products, and handle product damages and credits 
+							      	according to company policy. Grocery clerks must be familiar with store 
+							      	products and their locations in order to assist customers in locating items. 
+							      	In addition, grocery clerks must be able to perform all duties of a cashier.
+							      	</p>
+							      <br>
+							      
+							      <h1 id = "Champions">Champion Sports</h1>
+							      <h2 id = "ChampionsDate">02/11/2012 - 17/02/2013</h2>
+								     <p>
+								      	Cillín had a goal every week to sell a certain amount of shoes. Every 
+								      	week his sale target was met and one week he made over €400 than his target.
+								      	He enjoyed the challenge of trying to get every customer he met to not leave 
+								      	the shop without making a purchase. He was often given the task of doing 
+								      	security work for the shop. This gave him a lot of responsibility on his 
+								      	shoulders as he was the only security in the shop and it would get very busy 
+								      	around the Christmas period. On one occasion he caught a woman shop lifting 
+								     	and retained the products stolen.
+								     </p>
+								     
+						      </div>
+						      <!-- End of second tab -->
+						      
+						      <!-- Start of third tab -->
+						      <!-- Liftboy/Linktooling -->
+						      <div class="tab-pane" id="tab3">
+						      
+							      <h1 id = "LiftBoy">Liftboy/Linktooling</h1>
+							      <h2 id = "LiftBoyDate">06/06/2013 - 05/08/2013</h2>
+							      <p>
+							      	LiftBoy is a very popular Automation Gate company and Linktooling is a 
+							      	company that sells injected pin, screws etc, within Liftboy. In the short 
+							      	time Cillín worked here he had many responsibilities and duties. His main 
+							      	being to use Microsoft Office to make brochures, posters and presentations. 
+							 		<br>
+							     	This job was great for improving Cillíns communication skills. There wasn't 
+							      	a day that went by where he wouldn't talk to a client or company either in 
+							      	person or over the phone. He also had a lot of manual jobs like going onto 
+							      	sites to hang gates with his manager, program remotes for customers, fix machines 
+							      	in the showroom. These jobs involved a lot of talking to the clients and 
+							      	understanding the problem at hand.
+							      </p>
+							      
+						      </div>
+						      <!-- End of third tab -->
+						      
+						      <!-- Start of fourth tab -->
+						      <!-- Newbridge Silverware -->
+						      <div class="tab-pane" id="tab4">
+						      
+							      <h1 id = "Newbridge">Newbridge Silverware</h1>
+							      <h2 id = "NewbridgeDate">01/06/2011 - 28/08/2011</h2>
+							      <p>
+							      	Here he had the general duties of the restaurant. He would serve food and 
+							      	drinks using serving methods and techniques thought to him by management staff. 
+							      	Setting and clearing tables was also something that had to be learned how to do 
+							      	right. It was also his responsibility take orders from customers.
+							      </p>
+							      
+						      </div>
+						      <!-- End of fourth tab -->
+						      
+						      <!-- Start of fifth tab -->
+						      <!-- Curragh Race Course -->
+						      <div class="tab-pane" id="tab5">
+						      
+							      <h1 id = "Curragh">Curragh Race Course</h1>
+							      <h2 id = "CurraghDate">09/05/2010 - 21/08/2010</h2>
+							      <p>
+							      	Cillín really enjoyed the atmosphere at the races and the social side to 
+							      	this job. Each weekend he would be working in a different area of this complex. 
+							      	Most of his time here he worked behind a bar making drinks, collecting glasses, 
+							      	clearing 
+							      	tables etc. He often would have to work in a restaurant setting tables to a 
+							      	high standard, serving dinners, and cleaning dishes. On several occasions he 
+							      	worked in private suites. Here he would be a personal bartender/waiter for the 
+							      	owner of the suite, attending to all of their needs.
+							      </p>
+							      
+						      </div>
+						      <!-- End of fifth tab -->
+						      
+						    </div>
+						    <!-- End of list of tab headers -->
+						    
+						  </div>
+						  
+						</div>
+						
+					   </div>
+						
+					</div>
+					
+				</div>
+				<!-- End of jumbotron -->
+				
+		
+		
+		<!-- Start of footer -->
+		<!-- The footer is a navbar similar to the top -->
+		<!-- Except this navbar is declared as fixed. This 
+		is so the social media buttons are constantly visible -->
+		<div class = "navbar navbar-default navbar-fixed-bottom">
+		
+			<!-- Declaring the navbar as container -->
+			<div class = "container">
+			
+				<!-- Declaring the author of the site -->
+				<p> Built by Cillín Lyons</p>
+				
+			</div>
+			
+			<!-- Aligning social media icons to the right of the navbar  -->
+			<!-- Declaring right-hand side of navbar as socialmedia -->
+			<div id = "socialmedia" class = "container container-right">
+			
+				<p>
+					Follow Cillín on social media: 
+					<!-- Facebook image with link -->
+					<a href="https://www.facebook.com/cillin.lyons.1">
+					<img alt="facebook" src="facebook.png" width="25" height="25">
+					</a>
+					
+					<!-- Instagram image with link -->
+					<a href="https://instagram.com/cillin_l/">
+					<img alt="instagram" src="instagram.png" width="25" height="25">
+					</a>
+					
+					<!-- LinkedIn image with link -->
+					<a href="https://ie.linkedin.com/pub/cillin-lyons/8b/12a/5ba">
+					<img alt="linkedin" src="linkedin.png" width="25" height="25">
+					</a>
+				</p>
+			
+			</div>
+			
+		</div>
+		<!-- End of footer -->
+		
+		<!-- Link to bootstrap script -->
+		<script src = "http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src = "js/bootstrap.js"></script>
+		
+		<!-- Linking this page to the JavaScript.js page -->
+		<script src = "JavaScript.js"></script>
+		
+	</body>
+	<!-- End of body -->
+						<!-- Validation link: https://validator.w3.org/nu/#file -->
+</html>
